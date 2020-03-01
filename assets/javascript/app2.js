@@ -1,3 +1,7 @@
+//attempting to add bonus goals 
+//figure out a working URL for pulling random gifs each time
+
+//clear text box after hitting submit?? not just after clicking outside and back in text box
 
 
 $(document).ready(function () {
@@ -45,7 +49,17 @@ $(document).ready(function () {
         var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + selectedTopic +
             "&api_key=j08WvOTcX5eaD5thM3BKegRmbcTBCqL2&rating=G&limit=10";
 
-        console.log(queryURL);
+        // var queryURL = "https://api.giphy.com/v1/gifs/random?tag=" + selectedTopic +
+        // "&api_key=j08WvOTcX5eaD5thM3BKegRmbcTBCqL2&rating=G&limit=10";
+
+        // var queryURL = "https://api.giphy.com/v1/gifs/random?api_key=j08WvOTcX5eaD5thM3BKegRmbcTBCqL2&tag=" 
+        // + selectedTopic + "&rating=G">
+
+        // var queryURL = "https://api.giphy.com/v1/gifs/random?api_key=j08WvOTcX5eaD5thM3BKegRmbcTBCqL2&tag=football&rating=G";
+
+        // var queryURL = "https://api.giphy.com/v1/gifs/random?api_key=BkaUZZWcFij6J7AoQj3WtPb1R2p9O6V9&tag=cats";
+
+        console.log(queryURL); 
 
         $.ajax({
             url: queryURL,
@@ -58,7 +72,8 @@ $(document).ready(function () {
             for (var i = 0; i < results.length; i++) {
                 var gifDiv = $("<div>");
                 gifDiv.attr("class", "gifDiv");
-                var p = $("<p>").text("Rating: " + results[i].rating);
+                var pRating = $("<p>").text("Rating: " + results[i].rating);
+                var pTitle = $("<p>").text("Title: " + results[i].title);
                 var gifImage = $("<img>");
                 gifImage.attr({
                     "src": results[i].images.fixed_height_small_still.url,
@@ -68,7 +83,8 @@ $(document).ready(function () {
                     "data-state": "still",
                 });
                 gifDiv.append(gifImage);
-                gifDiv.append(p);
+                gifDiv.append(pTitle);
+                gifDiv.append(pRating);
                 $("#display-gifs").prepend(gifDiv);
             }
         });

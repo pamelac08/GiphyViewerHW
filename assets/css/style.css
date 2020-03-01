@@ -1,0 +1,71 @@
+.buttons {
+    padding: 5px;
+    margin: 5px;
+    background-color: cadetblue;
+    color: whitesmoke;
+}
+
+body {
+    max-width: 980px;
+}
+
+#topic-input{
+    width: 100%;
+}
+
+.gifDiv {
+    float: left;
+    margin: 5px;
+}
+
+#topic-input,
+#select-topic {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+#buttonsDiv {
+    float:left;
+    min-height: 200px;
+    width: 650px;
+}
+
+#formDiv {
+    float: left;
+    width: 300px;
+    min-height: 200px;
+}
+
+#gifDiv{
+    clear: both;
+}
+
+#buttonsDiv,
+#formDiv,
+#gifDiv {
+    border: none;
+}
+
+p {
+    word-wrap: inherit;
+    max-width: 100px;
+    font-size: 11px;
+}
+
+
+@media screen and (max-width: 900px) {
+    #buttonsDiv,
+    #gifDiv {
+        width: 100%;
+    }  
+
+}
+
+@media screen and (max-width: 375px) {
+    #buttonsDiv,
+    #formDiv,
+    #gifDiv {
+        width: 100%;
+    }  
+
+}
