@@ -1,10 +1,13 @@
 //attempting to add bonus goals 
-//figure out a working URL for pulling random gifs each time
+
 
 //clear text box after hitting submit?? not just after clicking outside and back in text box
 
 
 $(document).ready(function () {
+
+    //topic options: disney movie/character
+
 
     var topics = ["football", "soccer", "basketball", "volleyball", "running", "hockey"];
 
@@ -48,16 +51,6 @@ $(document).ready(function () {
 
         var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + selectedTopic +
             "&api_key=j08WvOTcX5eaD5thM3BKegRmbcTBCqL2&rating=G&limit=10";
-
-        // var queryURL = "https://api.giphy.com/v1/gifs/random?tag=" + selectedTopic +
-        // "&api_key=j08WvOTcX5eaD5thM3BKegRmbcTBCqL2&rating=G&limit=10";
-
-        // var queryURL = "https://api.giphy.com/v1/gifs/random?api_key=j08WvOTcX5eaD5thM3BKegRmbcTBCqL2&tag=" 
-        // + selectedTopic + "&rating=G">
-
-        // var queryURL = "https://api.giphy.com/v1/gifs/random?api_key=j08WvOTcX5eaD5thM3BKegRmbcTBCqL2&tag=football&rating=G";
-
-        // var queryURL = "https://api.giphy.com/v1/gifs/random?api_key=BkaUZZWcFij6J7AoQj3WtPb1R2p9O6V9&tag=cats";
 
         console.log(queryURL); 
 
@@ -109,18 +102,23 @@ $(document).ready(function () {
 });
 
 
+//returning a random gif only works for returning a single gif
+//added title to each gif
+
 
     //     Bonus Goals
     // Ensure your app is fully mobile responsive.
 
     // Allow users to request additional gifs to be added to the page.
-
-    // Each request should ADD 10 gifs to the page, NOT overwrite the existing gifs.
+            // Each request should ADD 10 gifs to the page, NOT overwrite the existing gifs.
+    
+    
     // List additional metadata (title, tags, etc) for each gif in a clean and readable format.
 
-    // Integrate this search with additional APIs such as OMDB, or Bands in Town. Be creative and build something you are proud to showcase in your portfolio
+    // Integrate this search with additional APIs such as OMDB, or Bands in Town. 
+            //Be creative and build something you are proud to showcase in your portfolio
 
     // Allow users to add their favorite gifs to a favorites section.
-
-    // This should persist even when they select or add a new topic.
-    // If you are looking for a major challenge, look into making this section persist even when the page is reloaded(via localStorage or cookies).
+            // This should persist even when they select or add a new topic.
+            // If you are looking for a major challenge, look into making this section persist 
+                //even when the page is reloaded(via localStorage or cookies).

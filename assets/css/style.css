@@ -1,7 +1,8 @@
+
 .buttons {
     padding: 5px;
     margin: 5px;
-    background-color: cadetblue;
+    background-color: gray;
     color: whitesmoke;
 }
 
@@ -9,13 +10,32 @@ body {
     max-width: 980px;
 }
 
+#buttonsDiv {
+    min-height: 150px;
+    width: 100%;
+}
+
+#formDiv {
+    float: left;
+    max-width: 280px;
+    min-height: 170px;
+}
+
 #topic-input{
     width: 100%;
 }
 
+#gifDiv{
+    float: left;
+    width: 700px;
+}
+
+
+/* individual gif divs within  */
 .gifDiv {
     float: left;
     margin: 5px;
+    height: 200px;
 }
 
 #topic-input,
@@ -24,21 +44,8 @@ body {
     margin-top: 10px;
 }
 
-#buttonsDiv {
-    float:left;
-    min-height: 200px;
-    width: 650px;
-}
 
-#formDiv {
-    float: left;
-    width: 300px;
-    min-height: 200px;
-}
 
-#gifDiv{
-    clear: both;
-}
 
 #buttonsDiv,
 #formDiv,
