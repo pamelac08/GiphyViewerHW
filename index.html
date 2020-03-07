@@ -6,28 +6,26 @@
     <title>Pamela C Giphy Viewer</title>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/d73a482ed0.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
-    <div class="card" id="buttonsDiv">
-        <div class="card-body" id="topic-buttons"></div>
+    <div class="row">
+        <div class="col" id="topic-buttons"></div>
     </div>
 
-    <div class="card" id="formDiv">
-        <div class="card-body">
+    <div class="row">
+        <div class="col-3">
             <form id="new-button-form">
-                <label for="topic-input">Add a Topic</label> <br>
+                <label for="topic-input">Add a Sport:</label> <br>
                 <input type="text" id="topic-input" onfocus="this.value=''"><br>
-                <input id="select-topic" type="submit" value="Submit">
-                
+                <input id="select-topic" type="submit" value="Submit"> <br>
           </form>
+          <button id="additional-gifs" data-shouldempty="false" data-increaseoffset="true">Show 10 more GIFs!</button>
         </div>
-    </div>
-
-    <div class="card" id="gifDiv">
-        <div class="card-body" id="display-gifs"></div>
+        <div class="row col" id="display-gifs"></div>
     </div>
     
 

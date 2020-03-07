@@ -1,42 +1,34 @@
 
-.buttons {
-    padding: 5px;
-    margin: 5px;
-    background-color: gray;
-    color: whitesmoke;
-}
 
 body {
-    max-width: 980px;
+    max-width: 1200px;
 }
 
-#buttonsDiv {
+/* Topic buttons */
+.buttons {
+    padding: 5px;
+    margin: 8px;
+    background-color: rgb(145, 142, 142);
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+/* row containing all buttons  */
+#topic-buttons {
     min-height: 150px;
     width: 100%;
 }
 
-#formDiv {
-    float: left;
-    max-width: 280px;
-    min-height: 170px;
+/* input form */
+.col-3 {
+    margin-left: 10px;
+    text-align: center;
 }
 
 #topic-input{
     width: 100%;
 }
 
-#gifDiv{
-    float: left;
-    width: 700px;
-}
-
-
-/* individual gif divs within  */
-.gifDiv {
-    float: left;
-    margin: 5px;
-    height: 200px;
-}
 
 #topic-input,
 #select-topic {
@@ -44,35 +36,30 @@ body {
     margin-top: 10px;
 }
 
+/* individual gif cards */
+  .card {
+      min-width: 270px;
+      margin: 5px;
+  }
 
-
-
-#buttonsDiv,
-#formDiv,
-#gifDiv {
-    border: none;
+.card-body {
+    border: 1px solid black;
 }
 
 p {
-    word-wrap: inherit;
-    max-width: 100px;
-    font-size: 11px;
+    text-align: left;
+    margin-top: 5px;
 }
 
-
-@media screen and (max-width: 900px) {
-    #buttonsDiv,
-    #gifDiv {
-        width: 100%;
-    }  
-
+/* "x" close button */
+.close-button {
+    margin-left: 6px;
+    padding: 0;
+    background-color: rgb(145, 142, 142);
+    border:none;
+}
+.fa-times {
+    font-size: 10px;
+    vertical-align: text-top;
 }
 
-@media screen and (max-width: 375px) {
-    #buttonsDiv,
-    #formDiv,
-    #gifDiv {
-        width: 100%;
-    }  
-
-}
