@@ -1,27 +1,26 @@
 # GiphyViewerHW
-HW#6 Giphy Viewer
+Coding Boot-camp Homework #6: Intro to APIs and AJAX
+
+
+### Deployed via Git Hub Pages:
+https://pamelac08.github.io/GiphyViewerHW/
 
 
 
-Using the GIPHY API to make a dynamic web page that populates with gifs of your choice. To finish this task, you must call the GIPHY API and use JavaScript and jQuery to change the HTML of your site.
+### Project Description:
 
--create an array of strings, each one related to a topic that interests you. Save it to a variable called topics
--take the topics in this array and create buttons in your HTML (Try using a loop that appends a button for each string in the array)
--When the user clicks on a button, the page should grab 10 static, non-animated gif images from the GIPHY API and place them on the page.
--When the user clicks one of the still GIPHY images, the gif should animate. If the user clicks the gif again, it should stop playing.
--Under every gif, display its rating (PG, G, so on).
--Add a form to your page that takes a value from a user input box and adds it to your topics array. Then make a function call that takes each topic in the array and remakes the buttons on the page.
+An application utilizing the Giphy API:
+
+* the application uses the GIPHY API to make a dynamic web page that populates with gifs of the users choice and uses JavaScript and jQuery to update the HTML
+* an initial choice of buttons is displayed for the user to select to add gifs to the page
+* there is also an input field for the user to add topic buttons to enable additional topics to be selected to display gifs
+* the gifs are initially displayed statically, when the user clicks once, the gif animates, another click makes the gif static again
+* each gif includes the name and rating
+* users can request an additional 10 gifs to the page for the current topic chosen
+* a user can delete a topic button using the small x button in the upper right corner of the corresponding topic button
 
 
-Bonus Goals
--Ensure your app is fully mobile responsive.
 
--Allow users to request additional gifs to be added to the page.
-    -Each request should ADD 10 gifs to the page, NOT overwrite the existing gifs.
-    -List additional metadata (title, tags, etc) for each gif in a clean and readable format.
+### Primarily used: 
 
--Integrate this search with additional APIs such as OMDB, or Bands in Town. Be creative and build something you are proud to showcase in your portfolio
-
--Allow users to add their favorite gifs to a favorites section.
-    -This should persist even when they select or add a new topic.
-    -If you are looking for a major challenge, look into making this section persist even when the page is reloaded(via localStorage or cookies).
+click event listeners, for loops, conditional statements, and API calls using the Ajax method to run this application.
